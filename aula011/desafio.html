@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <style>
+        body{
+            background-color: lightblue;
+            
+        }
+        header {
+            color: white;
+            background-color: rgb(4, 190, 251);
+           
+           margin: auto;
+        }
+        main {
+            background-color: aliceblue;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Que País voce mora???</h1>
+    </header>
+    <main>
+        País:<input type="string" name="txtpa" id="txtpa">
+        <input type="button" value="verificar" onclick="saber()">
+        <div id="resp"></div>
+        
+        
+        </div>
+        
+
+        
+
+
+    </main>
+    <script>
+       
+       function saber() {
+             
+        var textp = document.getElementById("txtpa")
+        var resp = document.getElementById("resp")
+        var p1 ="brasil"
+         var pais = "espanha"
+         resp.innerHTML = `vivendo em <strong>${pais}</strong> voce é `
+
+         if(pais == p1) {
+            resp.innerHTML += "vc e brasileiro"
+         } else {
+            resp.innerHTML += "vc é estrangeiro"
+         }
+         
+
+         
+        
+      
+      
+      
+                                       
+       
+        
+         
+        
+       }
+    </script>
+    
+</body>
+</html>
